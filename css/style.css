@@ -1,0 +1,214 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family:'Courier New', Courier, monospace'
+}
+
+
+header{
+    height: 850px;
+    background-color: rgb(255, 255, 255);
+    left: 0;
+    bottom: 0;
+    width: 100%;  
+    background-image: url(/images/backgroud-image-sky-5.png); 
+    margin-bottom: -70px;
+}
+
+main{
+    background-color: #2b2019;
+    height: fit-content;
+    text-align: center;
+    color: white;
+    margin: 0%;
+    padding-left:  50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+.logo{
+    text-align: center;
+    transform: translate(0%, 20%);
+    opacity: 1;  
+    animation: fadeIn 1.7s ; 
+}
+
+@keyframes fadeIn {  
+    from {  
+        opacity:0;  
+    }  
+ 
+    to {  
+        opacity:1;  
+    }  
+ }
+
+.main-title{
+    margin-top: 70px;
+    font-size: x-large;
+    margin-bottom: 70px ;
+    transform: translate(0%, 50%);
+}
+
+
+.corner-points{
+    position: relative;
+}
+
+.top-corner-left{
+    position: absolute;
+    left: -50px;
+    top: -123px;
+}
+
+.top-corner-right{
+    position: absolute;
+    left: 1390px;
+    top: -123px;
+}
+
+.bottom-corner-left{
+    position: absolute;
+}
+
+.bottom-corner-right{
+    position: absolute;
+}
+
+.project{
+    width: 350px;
+    height: 350px;
+    background-color: #2b2019;
+    padding: 1em;
+    border: 10px double;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+.project{
+    padding: 0%;
+    display: grid;
+    grid-template-columns: 350px;
+    grid-template-rows: 300px 50px;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    transition: transform .6s;
+}
+
+.project:hover {
+    transform: scale(1.1);
+    background-color: #3f2e24;
+  }
+
+.project-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+footer{
+    height: 100px;
+    background-color: #543521;
+    left: 0;
+    bottom: 0;
+    width: 100%;    
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    
+}
+
+
+/* Project page */ 
+
+.project-page{
+    display: grid;
+    grid-template-columns: 50%,50%;
+    grid-template-rows: 300px 500px;
+}
+
+.project-members{
+    background-color: #2b2019;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 1em;
+}
+
+.project-members h1{
+    text-align: center;
+    transform: translate(0%, -50%);
+}
+.project-members{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.project-members img{
+    align-items: center;
+    transform: translate(0%, -10%);
+    justify-content: space-around;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: transform .6s;
+}
+
+.project-members img:hover {
+    transform: scale(0.9999999999);
+  }
+
+.project-about{
+    background-color: #2b2019;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 1em;
+    text-align: left;
+    padding-top: 1em;
+}
+
+.project-image{
+    background-color: #2b2019;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 1em;
+    padding-top: 1em;
+}
+
+.image-frame {
+    width: 200px; /* Set the desired width */
+    height: 200px; /* Set the desired height */
+    border: 10px solid #2b2019; /* Frame color */
+    border-radius: 20px; /* Border radius for rounded corners */
+    overflow: hidden; /* Hide overflow content */
+    background: radial-gradient(circle, #b5a642, transparent); /* Circular gradient */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+    margin: 20px; /* Add margin for spacing between frames */
+}
+
+.content-image {
+    width: 75%; /* Make the image fill the frame */
+    height: 100%; /* Make the image fill the frame */
+    object-fit: cover; /* Maintain aspect ratio and cover the frame */
+    border-radius: 18px; /* Match the border radius of the frame */
+}

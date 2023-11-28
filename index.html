@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2023 Grad Show</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo"><img src="images/transparent1-bolt.png" alt="" /></div>
+    </header>
+
+    <main>
+      <div class="main-title"><h1>Projects</h1></div>
+
+      <div class="corner-points">
+        <div class="top-corner-left">
+          <img src="" alt="" />
+        </div>
+        <div class="top-corner-right">
+          <img src="" alt="" />
+        </div>
+        <div class="bottom-corner-left">
+          <img src="" alt="" />
+        </div>
+        <div class="bottom-corner-right">
+          <img src="" alt="" />
+        </div>
+      </div>
+
+      <section class="projects">
+        <div class="project">
+          <a href="project-template.html"
+            ><img src="images/RecipeRiot-small.png" alt=""
+          /></a>
+          <h1 class="project-title">Recipe Riot</h1>
+        </div>
+        <div class="project">
+          <a href="project-template.html"
+            ><img src="images/Lego-small.png" alt=""
+          /></a>
+          <h1 class="project-title">Lego</h1>
+        </div>
+        <div class="project"><h1 class="project-title">Project 3</h1></div>
+        <div class="project"><h1 class="project-title">Project 4</h1></div>
+        <div class="project"><h1 class="project-title">Project 5</h1></div>
+        <div class="project"><h1 class="project-title">Project 6</h1></div>
+        <div class="project"><h1 class="project-title">Project 7</h1></div>
+        <div class="project"><h1 class="project-title">Project 8</h1></div>
+        <div class="project"><h1 class="project-title">Project 9</h1></div>
+        <div class="project"><h1 class="project-title">Project 10</h1></div>
+        <div class="project"><h1 class="project-title">Project 11</h1></div>
+        <div class="project"><h1 class="project-title">Project 12</h1></div>
+      </section>
+    </main>
+
+    <footer>
+      <a href="about.html">About</a>
+      <a href="index.html">Home</a>
+      <a href="project-template.html">Test</a>
+    </footer>
+
+    <script>
+      document.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        var main = document.querySelector("main");
+        var footer = document.querySelector("footer");
+        var scrollPosition = window.scrollY;
+
+        // Update header color
+        header.style.backgroundColor = red;
+
+        // Update main color
+        main.style.backgroundColor = `rgb(${(scrollPosition + 50) % 255}, ${
+          (scrollPosition + 150) % 255
+        }, ${(scrollPosition + 250) % 255})`;
+
+        // Update footer color
+        footer.style.backgroundColor = `rgb(${(scrollPosition + 25) % 255}, ${
+          (scrollPosition + 75) % 255
+        }, ${(scrollPosition + 175) % 255})`;
+      });
+    </script>
+  </body>
+</html>
